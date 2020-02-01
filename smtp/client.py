@@ -30,7 +30,7 @@ html = """\
 msg.set_content(text)
 msg.add_alternative(html, subtype = 'html')
 
-target = '0.0.0.0:9999'
+target = '127.0.0.1:9999'
 host, port = target.split(':')[:2]
 
 smtpObj = smtplib.SMTP(host = host, port = port)
